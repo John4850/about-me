@@ -1,28 +1,57 @@
+import isYes from './is-yes.js';
+
 // Reference needed DOM elements
 const quizButton = document.getElementById('quizButton');
-const result = document.getElementById('quizButton');
+const quizResult = document.getElementById('quizResult');
 
 // // Event Handlers
-quizButton.onclick = function() {
-    alert('Let\'s see how well you know my best friend. Think you\'re ready?');
+quizButton.onclick = startQuiz;
 
-        // returns: true for "OK", and false for "Cancel"
-    
-};
-    // returns string entered by user, unless they cancel
-    // in which case returns null
-    var answer = quizButton.confirm()
-if (answer) {
-    //isYes function
+
+function startQuiz() {
+    const confirmed = confirm('Let\'s see how well you know my best friend. Think you\'re ready?');
+
+    if(confirmed === false) {
+        return;
+    }
+    let name = '';
+
+    const nameResult = prompt('What is your name');
+    name = name += nameResult;
+    console.log(name);
+
+    let correctAnswers = 0;
     const firstQuestion = prompt('Is my best friend\'s name Meeko?');
-    answer = answer + firstAnswer;
-}
-else {
-};
-
-    //isYes function fasley
+    if(isYes(firstQuestion) === true) {
+        correctAnswers += 1;
+    }
+    else {
+        correctAnswers += 0;
+    }
     const secondQuestion = prompt('Does he prefer Food over Pets?');
-    answer = answer + firstAnswer;
+    if(isYes(secondQuestion) === true) {
+        correctAnswers += 1;
+    }
+    else {
+        correctAnswers += 0;
+    }
     
     const thirdQuestion = prompt('Will he steal your girl?');
-    answer = answer + firstAnswer;
+    if(isYes(thirdQuestion) === true) {
+        correctAnswers += 1;
+        console.log(correctAnswers);
+    }
+    else {
+        correctAnswers += 0;
+    }
+    let response = 'Your name is ' + name + ' ';
+    
+    if(correctAnswers >= 3) {
+        response += 'and you know a little about my best friend.';
+    }
+    else {
+        response += ' And you need to meet my best friend.';
+
+    }
+    quizResult.textContent = correctAnswers + '/3 ' + response; 
+}
