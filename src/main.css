@@ -1,0 +1,43 @@
+img {
+    height: 200px;
+}
+header {
+    font: small-caps
+}    
+body {
+    font: normal;
+    text-align: center;
+    background: #1C6EA4;
+    background: -moz-linear-gradient(left, #1C6EA4 0%, #00F1FF 50%, #144E75 100%);
+    background: -webkit-linear-gradient(left, #1C6EA4 0%, #00F1FF 50%, #144E75 100%);
+    background: linear-gradient(to right, #1C6EA4 0%, #00F1FF 50%, #144E75 100%);}
+    
+button {
+    color: rgb(21, 227, 255); 
+    font-size: 30px; 
+    line-height: 30px; 
+    padding: 12px; 
+    border-radius: 50px; 
+    font-family: Georgia, serif; 
+    font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal; 
+    font-variant: normal; 
+    text-transform: none; 
+    background-image: linear-gradient(to right,  rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); 
+    box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; 
+    border: 2px solid rgb(28, 110, 164); 
+    display: inline-block;
+}
+   
+ul {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ol  {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
