@@ -1,7 +1,14 @@
-function isYes(answer) {
-    answer = answer.toLowerCase();
-    if(answer === yes)
+function isYes(text) {
+    text = text.toLowerCase();
+    if(text === 'yes') {
         return true;
-} else {
-    return false;
+    }
+    else if(text === 'y') {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
+
+export default isYes;
