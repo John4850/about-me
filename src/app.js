@@ -39,19 +39,21 @@ function startQuiz() {
     const thirdQuestion = prompt('Will he steal your girl?');
     if(isYes(thirdQuestion) === true) {
         correctAnswers += 1;
-        console.log(correctAnswers);
     }
-    else {
-        correctAnswers += 0;
-    }
+    // else {
+        //     correctAnswers + 0;
+        // }
     let response = 'Your name is ' + name + ' ';
-    
+        
     if(correctAnswers >= 3) {
         response += 'and you know a little about my best friend.';
     }
     else {
         response += ' And you need to meet my best friend.';
-
+            
     }
-    quizResult.textContent = correctAnswers + '/3 ' + response; 
+    console.log(correctAnswers);
+    const percentScore = Math.floor((correctAnswers / 3) * 100);
+    quizResult.textContent = correctAnswers + '/3 ' + response + ' ' + percentScore + '%';
+    //Sam fixed my math
 }
