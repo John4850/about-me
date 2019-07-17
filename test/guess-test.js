@@ -3,7 +3,7 @@ const test = QUnit.test;
 
 test('returns 0 if guess is correct', function(assert) {
     //Arrange
-    const guess = 5;
+    const guessInteger = 5;
 
     // Set up your parameters and expectations
     const correctNumber = 5;
@@ -11,7 +11,7 @@ test('returns 0 if guess is correct', function(assert) {
    
     
     //Act 
-    const result = guessNumbers(guess, correctNumber);
+    const result = makeNumber(guessInteger, correctNumber);
 
     // Call the function you're testing and set the result to a const
     
@@ -21,16 +21,16 @@ test('returns 0 if guess is correct', function(assert) {
     assert.equal(result, expected);
 
 });
-test('checks if false', function(assert) {
-    //Arrange
-    // Set up your parameters and expectations
-   
-    
-    //Act 
-    
+//Arrange
+// Set up your parameters and expectations
 
-    // Call the function you're testing and set the result to a const
 
-    //Assert
+//Act 
+
+
+// Call the function you're testing and set the result to a const
+
+//Assert
+    test('checks if false', function(assert) {
     // What should the result be?
 });
