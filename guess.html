@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guess a Number</title>
+    <link rel="stylesheet" href="./src/main.css">
+    <link rel="stylesheet" href="../guess.css">
+</head>
+<body>
+    <header>
+            <nav>
+                <a href="./">Home</a> |
+                <a href="guess.html">Guessing-Game</a>
+             </nav>
+    </header>
+    <section>
+        <h1>I want to play a game.</h1>
+    </section>
+        <p>   
+            <hr/>
+            <ul>
+            "Da Rules"<br>
+           <li>You have Four (4) attemps</li>
+           <li>You must guess a number between 1 and 20 </li>
+           <li>If you Guess correctly, you <strong>WIN</strong></li>
+           <li>If you can <strong>NOT</strong> Guess correctly in the alloted attempts, You <strong>LOSE</strong></li>
+            </ul>
+        </p>
+    <section>
+        <hr/><br>
+        <input type=number id="numSelect" min="1" max="20"><br><br>
+        <button id="gb"> Guess</button>
+    </section>
+    <script type="module" src="/src/guess.js"> </script>
+</body>
+</html>
