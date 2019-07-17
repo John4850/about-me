@@ -15,22 +15,23 @@
                 <a href="guess.html">Guessing-Game</a>
              </nav>
     </header>
-    <section>
-        <h1>I want to play a game.</h1>
-    </section>
-        <p>   
-            <hr/>
-            <ul>
-            "Da Rules"<br>
-           <li>You have Four (4) attemps</li>
-           <li>You must guess a number between 1 and 20 </li>
-           <li>Guess correctly, you <strong>WIN!</strong></li>
-           <li>If <strong>NOT</strong>, You <strong>LOSE</strong></li>
-            </ul>
-        </p>
+<h1>I want to play a game.</h1>
+    <table>
+           <tr>
+           <th> "Da Rules"</th>
+           </tr>
+           <td>You have Four (4) attemps </td>
+           <tr>
+           <td>You must guess a number between 1 and 20</td>
+           <tr></tr>
+           <td>Guess correctly, you <strong>WIN!</strong></td>
+           <tr></tr>
+           <td>If <strong>NOT</strong>, You <strong>LOSE</strong></td>
+    </table>
+        
     <section>
         <hr/><br>
-        <input type=number id="numSelect" min="1" max="20"><br><br>
+        <input type="number" id="guess" min="1" max="20"><br><br>
         <button id="gb"> Guess</button>
     </section>
     <script type="module" src="/src/guess.js"> </script>

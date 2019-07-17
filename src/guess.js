@@ -1,16 +1,12 @@
+import makeNumber from './makeNumber.js';
 // Elements
-const gb = document.getElementById('gb');
-const numSelect = document.getElementById('numSelect');
-let numSelectValue = numSelect.value
+const guess = document.getElementById('guess');
+const guessButton = document.getElementById('gb');
 
-
-gb.onclick = guessNumbers;
-
-
-function guessNumbers() {
-    console.log(numSelectValue);
-
-}
-function compareNumber() {
-    if numSelect === 
-}
+guessButton.addEventListener('click', () => {
+    let correctNumber = 5;
+    let guessInteger = parseInt(guess.value);
+    console.log('guessInteger', guessInteger);
+    const result = makeNumber(guessInteger, correctNumber);
+    console.log(result);
+});
