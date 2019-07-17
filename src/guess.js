@@ -8,7 +8,6 @@ const youLose = document.getElementById('loser');
 const answerDisplay = document.getElementById('answerIs');
 const direction = document.getElementById('direction');
 let correctNumber = Math.floor(Math.random() * 20 + 1);
-console.log(correctNumber);
 let triesRemaining = 4;
 tries.textContent = (triesRemaining);
 
@@ -20,7 +19,7 @@ guessButton.addEventListener('click', () => {
     triesRemaining --;
     tries.textContent = (triesRemaining);
     console.log(triesRemaining);
-    
+
     if(result === 0) {
         console.log('winner');
         guessButton.disabled = true;

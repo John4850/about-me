@@ -1,13 +1,14 @@
 import makeNumber from '../src/makeNumber.js';
+import './app-test.js/index.js';
+
 const test = QUnit.test;
 
 test('returns 0 if guess is correct', function(assert) {
     //Arrange
     const guess = 5;
+    const correctNumber = 5;
 
     // Set up your parameters and expectations
-    const correctNumber = 5;
-    const expected = 0;
    
     
     //Act 
@@ -18,6 +19,6 @@ test('returns 0 if guess is correct', function(assert) {
     
     //Assert
     // What should the result be?
-    assert.equal(result, expected);
-
+    assert.equal(guess, correctNumber);
+    assert.equal(result === 0);
 });
