@@ -1,9 +1,9 @@
-import guessNumbers from '../src/guess.js';
+import makeNumber from '../src/makeNumber.js';
 const test = QUnit.test;
 
 test('returns 0 if guess is correct', function(assert) {
     //Arrange
-    const guessInteger = 5;
+    const guess = 5;
 
     // Set up your parameters and expectations
     const correctNumber = 5;
@@ -11,7 +11,7 @@ test('returns 0 if guess is correct', function(assert) {
    
     
     //Act 
-    const result = makeNumber(guessInteger, correctNumber);
+    const result = makeNumber(guess, correctNumber);
 
     // Call the function you're testing and set the result to a const
     
@@ -20,17 +20,4 @@ test('returns 0 if guess is correct', function(assert) {
     // What should the result be?
     assert.equal(result, expected);
 
-});
-//Arrange
-// Set up your parameters and expectations
-
-
-//Act 
-
-
-// Call the function you're testing and set the result to a const
-
-//Assert
-    test('checks if false', function(assert) {
-    // What should the result be?
 });

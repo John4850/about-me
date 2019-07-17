@@ -20,6 +20,7 @@ guessButton.addEventListener('click', () => {
     triesRemaining --;
     tries.textContent = (triesRemaining);
     console.log(triesRemaining);
+    
     if(result === 0) {
         console.log('winner');
         guessButton.disabled = true;
@@ -30,6 +31,8 @@ guessButton.addEventListener('click', () => {
     else if(triesRemaining === 0) {
         guessButton.disabled = true;
         youLose.classList.remove('hidden');
+        direction.classList.add('hidden');
+
     }
     else if(result === -1) {
         console.log('TooLow');
