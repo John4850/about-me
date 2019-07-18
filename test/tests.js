@@ -1,2 +1,3 @@
-import './app-test.js/index.js';
-import './guess-test.js';
+import './app.test.js';
+import './guess.test.js';
+import './rps.test.js';

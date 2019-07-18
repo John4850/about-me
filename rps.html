@@ -16,44 +16,39 @@
             <a href="rps.html">Rock-Paper-Scissors</a><hr>
         </nav>
     </header>
+    
 <h1>Rock Paper Scissors</h1>
-<img class="logo" src="/assets/rock-paper-scissors-logo.png">
-<section class="generatedThrow">
+<img id="logo" src="/assets/rock-paper-scissors-logo.png">
+
+<section id="generatedThrow">
     <table>
-        <td>Rock<br>
+        <td class="hidden">Rock<br>
             <img src="/assets/rock.png">
         </td>
-        <td>Paper<br>
+        <td class="hidden">Paper<br>
             <img src="/assets/paper.png">
         </td>
-        <td>Scissors<br>
+        <td class="hidden">Scissors<br>
             <img src="/assets/scissors.png">
         </td>
-
-
-
-
-
     </table>
-
-
 </section>
-<section class="userThrow">
+<section id="userThrow">
+    <h2>Choose your throw</h2>
     <label>
-        <input type="radio" name="throwRock" value="rock">
+        <input type="radio" name="throw" value="rock">
         <img class="radio-image" src="assets/rock.png">
     </label>
     <label>
-        <input type="radio" name="throwPaper" value="paper">
+        <input type="radio" name="throw" value="paper">
         <img class="radio-image" src="assets/paper.png">
     </label>
     <label>
-        <input type="radio" name="throwScissors" value="paper">
+        <input type="radio" name="throw" value="paper">
         <img class="radio-image" src="assets/scissors.png">
-    </label>
+    </label><br>
 
-
-
+<button id="throwButton">Throw!</button>
 
 </section>
 
@@ -62,6 +57,6 @@
 
 
 
-
+<script type="module" src="/src/rpsGame.js"> </script>
 </body>
 </html>

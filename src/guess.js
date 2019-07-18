@@ -21,7 +21,6 @@ guessButton.addEventListener('click', () => {
     console.log(triesRemaining);
 
     if(result === 0) {
-        console.log('winner');
         guessButton.disabled = true;
         youWin.classList.remove('hidden');
         direction.classList.add('hidden');
