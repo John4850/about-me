@@ -5,3 +5,6 @@ table {
     margin-right:15%;
 }
 
+.hiddem {
+    visibility: hidden;
+}
