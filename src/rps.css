@@ -16,9 +16,9 @@ table {
 input:checked + .radio-image {
     border: 5px solid red;
 }
-/* FIX ME */
-/* {
+/* too broad */
+img {
     border: 5px solid royalblue;
     border-radius: 100%;
     width: 25%;
-} */
+}
