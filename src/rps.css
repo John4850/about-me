@@ -5,6 +5,20 @@ table {
     margin-right:15%;
 }
 
-.hiddem {
+/* .hidden {
     visibility: hidden;
+} */
+.radio-image {
+    border: 5px solid royalblue;
+    border-radius: 100%;
+    width: 25%;
 }
+input:checked + .radio-image {
+    border: 5px solid red;
+}
+/* FIX ME */
+/* {
+    border: 5px solid royalblue;
+    border-radius: 100%;
+    width: 25%;
+} */

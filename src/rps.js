@@ -1,6 +1,3 @@
-
-
-
 export function getThrowFromNumber(number) {
     if(number === 0) {
         return 'rock';
