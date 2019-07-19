@@ -31,16 +31,16 @@ button {
 }
    
 ul {
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
     text-align: justify;
     font-variant: small-caps;
 }
 ol  {
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
     text-align: justify;
     font-variant: small-caps;
 }

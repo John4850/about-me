@@ -4,10 +4,14 @@ table {
     margin-left:15%; 
     margin-right:15%;
 }
+input {
+    display: none;
+}
 
-/* .hidden {
+.hidden {
     visibility: hidden;
-} */
+}
+
 .radio-image {
     border: 5px solid royalblue;
     border-radius: 100%;

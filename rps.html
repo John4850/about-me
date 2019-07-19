@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,55 +9,62 @@
     <link rel="stylesheet" href="./src/rps.css">
     <title>Rock, Paper, Scissors</title>
 </head>
+
 <body>
     <header>
         <nav>
             <a href="./">Home</a> |
-            <a href="guess.html">Guessing-Game</a> | 
-            <a href="rps.html">Rock-Paper-Scissors</a><hr>
+            <a href="guess.html">Guessing-Game</a> |
+            <a href="rps.html">Rock-Paper-Scissors</a>
+            <hr>
         </nav>
     </header>
-    
-<h1>Rock Paper Scissors</h1>
-<img id="logo" src="/assets/rock-paper-scissors-logo.png">
 
-<section id="generatedThrow">
+    <h1>Rock Paper Scissors</h1>
+    <img id="logo" src="/assets/rock-paper-scissors-logo.png">
 
-        <label class="hidden" name="rock">
-            <img src="/assets/rock.png">
+    <section id="userThrow">
+        <h2>Choose your throw</h2>
+        <label>
+            <input type="radio" name="throw" value="rock" checked>
+            <img class="radio-image" src="assets/rock.png">
         </label>
-        <label class="hidden" name="Paper">
-            <img src="/assets/paper.png">
+        <label>
+            <input type="radio" name="throw" value="paper">
+            <img class="radio-image" src="assets/paper.png">
         </label>
-        <label class="hidden" name="scissors">
-            <img src="/assets/scissors.png">
+        <label>
+            <input type="radio" name="throw" value="scissors">
+            <img class="radio-image" src="assets/scissors.png">
         </label>
-    
-</section>
-<section id="userThrow">
-    <h2>Choose your throw</h2>
-    <label>
-        <input type="radio" name="throw" value="rock" checked> 
-        <img class="radio-image" src="assets/rock.png">
-    </label>
-    <label>
-        <input type="radio" name="throw" value="paper">
-        <img class="radio-image" src="assets/paper.png">
-    </label>
-    <label>
-        <input type="radio" name="throw" value="scissors">
-        <img class="radio-image" src="assets/scissors.png">
-    </label>
 
-<button id="throw-button">Throw!</button>
+        <button id="throw-button">Throw!</button>
 
-</section>
+        <section id="generatedThrow">
 
+            <label  id="rock">
+                <img class="hidden" id="result" src="/assets/rock.png">
+            </label>
+            <!-- <label class="hidden" id="paper">
+                <img src="/assets/paper.png">
+            </label>
+            <label class="hidden" id="scissors">
+                <img src="/assets/scissors.png">
+            </label> -->
 
+        </section>
 
+        <section class="results">
+            <p id="message"></p>
+            <p id="score">
+                <span>Wins: <span id="win-count"></span></span>
+                <span>Losses: <span id="loss-count"></span></span>
+                <span>Draws: <span id="draw-count"></span></span>
+            </p>
+        </section>
+    </section>
 
-
-
-<script type="module" src="/src/rpsGame.js"> </script>
+    <script type="module" src="/src/rpsGame.js"> </script>
 </body>
+
 </html>
