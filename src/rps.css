@@ -15,7 +15,6 @@ input {
 .radio-image {
     border: 5px solid royalblue;
     border-radius: 100%;
-    width: 25%;
 }
 input:checked + .radio-image {
     border: 5px solid red;
@@ -24,5 +23,23 @@ input:checked + .radio-image {
 img {
     border: 5px solid royalblue;
     border-radius: 100%;
-    width: 25%;
+    width: 100px;
+    height: 100px;
+
+}
+img#logo {
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    border-radius: 100%;
+    border: 1px solid black
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }
