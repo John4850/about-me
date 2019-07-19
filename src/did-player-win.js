@@ -1,5 +1,4 @@
 
-
 export function didPlayerWin(userChoice, computerChoice) {
     if(userChoice === 'rock' && computerChoice === 'scissors') {
         return true;
@@ -15,8 +14,5 @@ export function didPlayerWin(userChoice, computerChoice) {
     }
     else {
         return false;
-        
     }
-    
-
 }

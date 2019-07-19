@@ -50,7 +50,6 @@ function startQuiz() {
     }
     else {
         response += ' And you need to meet my best friend.';
-            
     }
     console.log(correctAnswers);
     const percentScore = Math.floor((correctAnswers / 3) * 100);
