@@ -20,8 +20,3 @@ export function didPlayerWin(userChoice, computerChoice) {
     
 
 }
-
-
-// rock>scissors
-// scissors>paper
-// paper>rock
