@@ -1,0 +1,49 @@
+table {
+    justify-content: center;
+    width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
+}
+input {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.radio-image {
+    border: 5px solid royalblue;
+    border-radius: 100%;
+}
+input:checked + .radio-image {
+    border: 5px solid red;
+}
+/* too broad */
+img {
+    border: 5px solid royalblue;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+
+}
+img#logo {
+    animation-name: spin;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    border-radius: 100%;
+    border: 1px solid black;
+}
+.logo-wrapper {
+    width: 100vw;
+    text-align-last: center;
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}

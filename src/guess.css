@@ -1,0 +1,16 @@
+.tables {
+    justify-content: center
+}
+.hidden {
+    display: none
+}
+table#rules {
+    width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
+}
+table#gameResults {
+    width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
+  }
