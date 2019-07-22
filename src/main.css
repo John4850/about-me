@@ -28,8 +28,6 @@ button {
 }
    
 ul, ol {
-    height: 100;
-    width: 50%;
     margin-left: 25%;
     margin-right: 25%;
     align-items: center;
@@ -53,4 +51,13 @@ header {
 
 .hidden {
     visibility: hidden;
+}
+section {
+    width: 100vw;
+    text-align: center;
+}
+.intro {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%
 }

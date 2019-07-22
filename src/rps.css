@@ -33,7 +33,11 @@ img#logo {
     animation-iteration-count: infinite;
     animation-timing-function: linear; 
     border-radius: 100%;
-    border: 1px solid black
+    border: 1px solid black;
+}
+.logo-wrapper {
+    width: 100vw;
+    text-align-last: center;
 }
 @keyframes spin {
     from {
