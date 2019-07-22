@@ -1,12 +1,9 @@
 img {
     height: 200px;
-}
-h1 {
-    font-variant: small-caps;
-}    
+
+} 
 body {
     font: normal;
-    text-align: center;
     background: #1C6EA4;
     background: -moz-linear-gradient(left, #1C6EA4 0%, #00F1FF 50%, #144E75 100%);
     background: -webkit-linear-gradient(left, #1C6EA4 0%, #00F1FF 50%, #144E75 100%);
@@ -30,22 +27,30 @@ button {
     display: inline-block;
 }
    
-ul {
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+ul, ol {
+    height: 100;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    align-items: center;
+    justify-content: center;
     text-align: justify;
     font-variant: small-caps;
 }
-ol  {
-    width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
-    text-align: justify;
-    font-variant: small-caps;
-}
-h3 {
+h1, h2, h3 {
     font-style: italic;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
-    
+}
+header {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    visibility: hidden;
 }

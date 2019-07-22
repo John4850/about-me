@@ -36,20 +36,26 @@ function startQuiz() {
         correctAnswers += 0;
     }
     
-    const thirdQuestion = prompt('Will he steal your girl?');
-    if(isYes(thirdQuestion) === true) {
+    const thirdQuestion = prompt('Can you leave him alone with your girl?');
+    if(isYes(thirdQuestion) === false) {
         correctAnswers += 1;
     }
     // else {
         //     correctAnswers + 0;
         // }
     let response = 'Your name is ' + name + ' ';
-        
+    const win = document.getElementById('win');
+    const lose = document.getElementById('lose');    
+
     if(correctAnswers >= 3) {
         response += 'and you know a little about my best friend.';
+        win.classList.remove('hidden');
+        lose.classList.add('hidden');
     }
     else {
         response += ' And you need to meet my best friend.';
+        lose.classList.remove('hidden');
+        win.classList.add('hidden');
     }
     console.log(correctAnswers);
     const percentScore = Math.floor((correctAnswers / 3) * 100);
