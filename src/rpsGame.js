@@ -1,7 +1,6 @@
 import getThrow from './rps.js';
 import { didPlayerWin } from './did-player-win.js';
 
-
 const throwButton = document.getElementById('throw-button');
 const result = document.getElementById('result');
 const message = document.getElementById('message');

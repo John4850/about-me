@@ -9,5 +9,4 @@ function makeNumber(guess, correctNumber) {
         return -1;
     }
 }
-
 export default makeNumber;

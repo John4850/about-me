@@ -1,5 +1,4 @@
 import makeNumber from './makeNumber.js';
-// Elements
 const guess = document.getElementById('guess');
 const guessButton = document.getElementById('gb');
 const tries = document.getElementById('triesRemaining');
@@ -13,13 +12,9 @@ tries.textContent = (triesRemaining);
 
 guessButton.addEventListener('click', () => {
     let guessInteger = parseInt(guess.value);
-    console.log('guessInteger', guessInteger);
     const result = makeNumber(guessInteger, correctNumber);
-    console.log(result);
     triesRemaining --;
     tries.textContent = (triesRemaining);
-    console.log(triesRemaining);
-
     if(result === 0) {
         guessButton.disabled = true;
         youWin.classList.remove('hidden');
@@ -30,17 +25,13 @@ guessButton.addEventListener('click', () => {
         guessButton.disabled = true;
         youLose.classList.remove('hidden');
         direction.classList.add('hidden');
-
     }
     else if(result === -1) {
-        console.log('TooLow');
         direction.classList.remove('hidden');
         answerDisplay.textContent = 'Low';
     }
     else if(result === 1) {
-        console.log('TooHigh');
         direction.classList.remove('hidden');
         answerDisplay.textContent = 'High';
     }
-
 });

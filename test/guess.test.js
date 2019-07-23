@@ -9,7 +9,6 @@ test('returns 0 if guess is correct', function(assert) {
     const result = makeNumber(guess, correctNumber);
     assert.equal(expected, result);
 });
-
 test('returns -1 if guess is low', function(assert) {
     const guess = 4;
     const correctNumber = 5;

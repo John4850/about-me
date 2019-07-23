@@ -14,14 +14,12 @@ test('returns paper if 1', (assert) => {
     const result = getThrowFromNumber(number);
     assert.equal(expected, result);
 });
-
 test('returns scissors if 2', (assert) => {
     const number = 2;
     const expected = 'scissors';
     const result = getThrowFromNumber(number);
     assert.equal(expected, result);
 });
-
 test('returns true if player wins', (assert) => {
     const userChoice = 'rock';
     const computerChoice = 'scissors';
