@@ -1,17 +1,14 @@
 img {
     height: 200px;
-}
-h1 {
-    font-variant: small-caps;
-}    
+
+} 
 body {
     font: normal;
-    text-align: center;
     background: #1C6EA4;
     background: -moz-linear-gradient(left, #1C6EA4 0%, #00F1FF 50%, #144E75 100%);
     background: -webkit-linear-gradient(left, #1C6EA4 0%, #00F1FF 50%, #144E75 100%);
-    background: linear-gradient(to right, #1C6EA4 0%, #00F1FF 50%, #144E75 100%);}
-    
+    background: linear-gradient(to right, #1C6EA4 0%, #00F1FF 50%, #144E75 100%);
+}
 button {
     color: rgb(21, 227, 255); 
     font-size: 30px; 
@@ -29,23 +26,37 @@ button {
     border: 2px solid rgb(28, 110, 164); 
     display: inline-block;
 }
-   
-ul {
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+ul, ol {
+    margin-left: 25%;
+    margin-right: 25%;
+    align-items: center;
+    justify-content: center;
     text-align: justify;
     font-variant: small-caps;
 }
-ol  {
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: justify;
-    font-variant: small-caps;
-}
-h3 {
+h1, h2, h3 {
     font-style: italic;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
-    
+}
+header {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    visibility: hidden;
+}
+section {
+    width: 100vw;
+    text-align: center;
+}
+.intro {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%
 }

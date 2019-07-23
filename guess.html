@@ -10,29 +10,33 @@
 </head>
 <body>
     <header>
-            <nav>
-                <a href="./">Home</a> |
-                <a href="guess.html">Guessing-Game</a>
-             </nav>
+        <nav>
+            <a href="./">Home</a> |
+            <a href="guess.html">Guessing-Game</a> | 
+            <a href="rps.html">Rock-Paper-Scissors</a><hr>
+        </nav>
     </header>
 <h1>I want to play a game.</h1>
-    <table id='rules'>
-           <tr>
-           <th> "Da Rules"</th>
-           </tr>
-           <td>You have Four (4) attemps </td>
-           <tr>
-           <td>You must guess a number between 1 and 20</td>
-           <tr></tr>
-           <td>Guess correctly, you <strong>WIN!</strong></td>
-           <tr></tr>
-           <td>If <strong>NOT</strong>, You <strong>LOSE</strong></td>
-    </table> 
     <section>
-        <hr/><br>
-        <input type="number" id="guess" min="1" max="20" value="1"><br><br>
-        <button id="gb"> Guess</button>
+    <table id='rules'>
+
+        <tr>
+            <th> "Da Rules"</th>
+        </tr>
+        <td>You have Four (4) attemps </td>
+        <tr>
+            <td>You must guess a number between 1 and 20</td>
+            <tr></tr>
+            <td>Guess correctly, you <strong>WIN!</strong></td>
+            <tr></tr>
+            <td>If <strong>NOT</strong>, You <strong>LOSE</strong></td>
+        </table> 
     </section>
+<section>
+    <br>
+    <input type="number" id="guess" min="1" max="20" value="1"><br><br>
+    <button id="gb"> Guess</button>
+</section>
     <br>
     <table id='gameResults'>
        <tr><th>Tries Remaining: <span id="triesRemaining"></span> </th></tr>
@@ -46,6 +50,6 @@
 
         <td class="hidden" id="direction">Your Answer is too <strong><span id="answerIs"></span></strong></td>
     </table>
-    <script type="module" src="/src/guess.js"> </script>
+    <script type="module" src="src/guess.js"> </script>
 </body>
 </html>

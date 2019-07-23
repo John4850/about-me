@@ -10,5 +10,4 @@ function isYes(text) {
         return false;
     }
 }
-
 export default isYes;
